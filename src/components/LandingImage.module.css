@@ -1,0 +1,168 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap'); */
+.main__container {
+  position: relative !important;
+  
+  overflow: hidden;
+  background-image: url('/landing/1d3f76dc0976d9b8249b24da8f1d99b4.backdrop-video-min.jpg');
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover cover;
+  width: 100% !important;
+  animation: transform 5s ease-in-out;
+  
+}
+
+
+.carousel__landing{
+  width: 100% !important;
+}
+@keyframes transform{
+  0%{
+    scale: 1;
+  }
+  100%{
+    scale:1.1;
+  }
+
+}
+
+@media (max-width: 992px) {
+  /* .carousel__item {
+    min-height: 50vh;
+  } */
+  .main__container{
+background-size: smaller !important;
+background-position: 50%;
+height: 60vh;
+
+  }
+ 
+  
+}
+.d-block .w-100 .image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
+.image {
+  transition: transform 5s ease-in-out;
+}
+.main__container:hover .image {
+  transform: scale(1.2);
+}
+
+.overlay__image {
+  padding: 10px;
+  color: white;
+  
+  height: 100%;
+  width: 50%;
+  bottom: 0%;
+  left: 0%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0);
+  animation: easeup 1s forwards;
+}
+
+
+@keyframes easeup {
+  0% {
+    transform: translateY(70%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .overlay__image{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    top:20px;
+    
+    
+  
+  } 
+  .overlay__image h1{
+    font-size: 28px !important;
+    margin-top: 30px !important;
+  }
+  .overlay__image p{
+    font-size: 19px !important;
+   
+  }
+
+ 
+  @keyframes easeup {
+    0% {
+      transform: translateY(70%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  .d-block .w-100 .image {
+    /* display: block !important; */
+    /* width: 100% !important; */
+    height: auto !important;
+  }
+  
+}
+
+
+/* .main_container:hover .overlay-image {
+  opacity: 1;
+}
+.d-block .w-100 .image:focus .overlay-image {
+  opacity: 1;
+} */
+
+.overlay__image h1{
+  font-size: 4.0vw;
+  font-family: "PT Serif", Sans-serif;
+}
+.overlay__image p{
+  font-size: 1.5vw;
+  font-family: "PT Serif", Sans-serif;
+ 
+}
+
+.apply{
+  background-color: #0092ff;
+  color:white !important;
+  border:none !important;
+  border-radius: 5px;
+  margin: 0px !important;
+  width:50%;
+  padding: 10px;
+  
+}
+
+
+@media screen and (max-width: 992px){
+  .overlay__image{
+    
+  } 
+  .apply{
+    margin-inline-start: 30px !important;
+    margin-top: 40px !important;
+    /* font-size: 1.5vw !important; */
+   }
+}
+
+.apply:hover,
+.apply:active{
+  background-color: white !important;
+  color: darkblue !important;
+}
+.contact{
+  background-color: white;
+  color:#0092ff;
+  border:none !important;
+  border-radius: 5px;
+
+}
+.contact:hover,.contact:active{
+  background-color: #0092ff;
+  color: white;
+}

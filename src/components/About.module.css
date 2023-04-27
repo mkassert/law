@@ -1,0 +1,73 @@
+.about__fluid{
+    background-image: url('/landing/34cca26c7e9e7ce0a5e9b6e08bdc674d.law-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto",sans-serif;
+  
+}
+.about__content{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width:768px) {
+    .about__row{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about__row{
+        width: auto;
+    }
+}
+
+.video{
+    overflow: hidden;
+    background-image: url('/landing/1d3f76dc0976d9b8249b24da8f1d99b4.backdrop-video-min.jpg');
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+    width: 100% !important;
+    min-height: 500px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: "Roboto",sans-serif;
+}
+
+.video h2{
+    font-size: 3rem;
+}
+.video h3{
+    font-size: 1.5rem;
+}
+.video__btn:hover,.video__btn:active{
+  background-color:yellow;
+}
+
+.faculty{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+.animation {
+color:white;
+background-image: url('/landing/5990b8732018d8ba8083d89d536fdc85.final-image-backdrop-scaled.jpg');
+min-height: 500px;
+display: flex;
+align-items: center;
+}
+
+
+.students{
+    min-height: 500px;
+    background-color: #fdc800;
+}

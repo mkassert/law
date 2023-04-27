@@ -1,0 +1,59 @@
+.events{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+
+.notice__row{
+    position: relative;
+    height:300px;
+    overflow: hidden;
+}
+
+.marquee {
+    position: absolute;
+    
+  animation: upwards-marquee 15s linear infinite;
+  
+}
+.marquee:hover{
+    animation-play-state: paused ;
+}
+@keyframes upwards-marquee {
+    0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+    .marquee li:hover{
+        color: darkgoldenrod;
+    }
+
+
+.yellow{
+    position: relative;
+    
+}
+
+.dot1{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+    background-color: darkblue;
+    border-radius: 100%;
+}
+.dot2{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    background-color: darkblue;
+    border-radius: 100%;
+}
